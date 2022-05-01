@@ -13,6 +13,13 @@ main {
     min-height: 100vh;
 }
 
+.contenedor {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1024px;
+}
+
 /* HEADER (all pages) */ 
 
 .header {
@@ -22,20 +29,22 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    
     width: 100%;
     top: 0;    
 }
 
 .header__marca {
     width: 200px;
-    height: 50px;
+    height: auto;
+    align-content: center;
     
 }
 
 .header__logo {
-    width: 200px;
-    height: 50px;
+    width: 12rem;
+    height: auto;
+    align-self: center;
     
 
 }
@@ -76,7 +85,7 @@ main {
     justify-content:space-around;
     align-items: center;
     padding: 1rem;
-    background-color: #2991d6;
+  
 
 
 }
@@ -171,6 +180,7 @@ main {
 .column {
     display:flex;
     color: black;
+ 
    
 
 
@@ -249,40 +259,45 @@ main {
 }
 
 .contenedordefotos {
-    width: 120rem;
+    width: 100%;
+    height: auto;
 }
 .fotos {
     display: flex;
     flex-direction:row;
-    justify-content: space-around;
-    margin: 1rem 1rem 1rem 1rem;
-    width:100vh;
-    height:100% ;
-    border: solid cornflowerblue;
+    position:relative;
+    align-items: center;
+    
+    width: 100%;
+    height:auto ;
+    
     border-radius: 8px;
     align-content: space-between;
-  
+    column-gap: 1%;
+    justify-content: space-between;
+   padding: 1rem;
    
 }
 
 .fotos__jardin {
     width: 30%;
-    height: 17rem;
-    margin: 1rem;
+    height: auto;
+    
     border-radius: 8px;
+
 }
 
 .fotos__primaria {
     width: 30%;
-    height: 17rem;
-    margin: 1rem;
+    height: auto;
+    
     border-radius: 8px;
 }
 
 .fotos__secundario {
     width: 30%;
-    height: 17rem;
-   margin: 1rem;
+    height: auto;
+   
    border-radius: 8px;
 }
 
@@ -322,6 +337,10 @@ main {
     line-height: 25px;
 }
 
+.contenedorhistoria {
+    align-self: center;
+}
+
 .historia1 {
     vertical-align: middle;
     width: 70%;
@@ -334,10 +353,11 @@ main {
 .historia2 {
     vertical-align: middle;
     width: 70%;
-    margin-left: 11rem;
+    margin-left: 9rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
     border-radius: 8px;
+    justify-items: center;
 }
 
 .titulo1 {
@@ -378,16 +398,9 @@ main {
 .imagenes1 {
     display: flex;
     flex-direction: row;
-    justify-content:  space-between;
+    justify-content:  space-around;
     margin-bottom: 4rem;
-}
-
-.img1 {
-    margin-left: 3rem;
-}
-
-.img2 {
-    margin-right: 3rem;
+    align-items: center;
 }
 
 .titulo {
@@ -596,16 +609,19 @@ main {
     }
 
     .imagencolegio {
-        width: 700px;
+        width: 100%;
     }
 
     .section1 {
-        height: 600px;
+        height:100% ;
         width: 100%;
     }
 
     .piedeimagen__manuscrita {
         font-size: x-large;
+        margin: 0 auto;
+        justify-self: center;
+     
     }
 
     .piedeimagen__texto {
@@ -651,19 +667,27 @@ main {
         font-size: medium;
     }
 
+    .fotos {
+        justify-content: space-between;
+        justify-items: center;
+        width: 100%; ;
+        
+    }
+
     .fotos__jardin {
-        width: 200px;
-        height: 200px;
+        width: 30%;
+        height: 30%;
+        
     }
 
     .fotos__primaria {
-        width: 200px;
-        height: 200px;
+        width: 30%;
+        height: 30%;
     }
 
     .fotos__secundario {
-        width: 200px;
-        height: 200px;
+        width: 30%;
+        height: 30%;
     }
 
     .historia {
@@ -706,21 +730,39 @@ main {
         
     }
 
+    .contenedor{
+        width: 100%;
+    }
+
     .viajes {
         font-size: 100%;
     }
 
     .imagenes1 {
-        width: 400px;
+     
+        position: relative;
+     
+      
+        
+        justify-self: center;
+        height: auto;
+        align-items: center;
+       
+    }
+   
+
+    .img1 {
+        width: 50%;
+        height: auto;
+      
        
     }
 
-    .img1 {
-        width: 350px;
-    }
-
     .img2 {
-        width: 350px;
+        width: 50%;
+        height: auto;
+     
+      
     }
 
     .titulo {
@@ -742,50 +784,93 @@ main {
     .travel__grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(1, 300px);
+        gap: 3rem;
 
     }
 
     .travel__imagen {
-        width: 300px;
+        width: 30%
         gap: 3rem;
+        height: auto;
     }
 
     .contacto {
         font-size: 100%;
+        text-align: center;
     }
 
     .form {
-        width: 500px;
+        width: 800px;
+        align-self: center;
+       
     }
 
     .label {
         font-size: small;
+        align-self:flex-start;
+        margin-left: 6rem;
     }
 
     .input {
-        width: 350px;
+        width: 80%;
+        align-self: center;
     }
 
     .input__mensaje {
-        width: 350px;
+        width: 80%;
+        align-self: center;
     }
 
     .button {
-        width: 80px;
+        width: 15rem;
         font-size: small;
+        align-self: center;
+        height: 3rem;
     }
 
     .google {
-        width: 450px;
+        width: 100%;
         margin: 1rem;
+        justify-self: center;
+       
+        
+       
 
     }
+
+    .google__maps {
+        width: 100%;
+        justify-self: center;
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+        
+     
+    }
+
+    .contacto__row {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 2rem;
+    }
 }
-    
+
+
 @media screen and (max-width: 600px) {
 
     .nav {
         display: none;
+    }
+
+    .header {
+        width: 100%;
+        align-items: flex-start
+    }
+
+    .header__logo {
+        width: 80%%;
+        height: auto;
+        
     }
 
     .imagencolegio {
@@ -796,21 +881,24 @@ main {
     }
 
     .main {
-        height: 350px;
+        height: 100%;
         min-height: 0;
     }
 
     .section1 {
-        height: 350px;
+        height:130% ;
+        width: 100%;
     }
 
+       
+
     .piedeimagen {
-        height: 100px;
+        width: 100%;;
     }
 
     .piedeimagen__manuscrita {
       
-        font-size: small;
+        font-size: 1em;
     }
 
     .piedeimagen__texto {
@@ -818,18 +906,127 @@ main {
     }
 
     .footer {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        position: relative;
     }
 
     .footer__logo {
-        order: -3;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .footer__texto { 
+        width: 80%;
+        position: relative;
+        align-items: center;
+        margin-bottom: 6rem;
+    }
+
+    .footer__contacto {
+        width: 80%;
+        align-items: flex-end;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        
+       
+       
     }
     
     .column {
         flex-wrap: wrap;
+        gap: 1rem;
+        margin: 1rem;
     }
 
+    .secundario {
+        margin: 2rem;
+    }
+
+    .secundario__titulo {
+        margin: 1rem;
+    }
+
+    .fotos {
+        flex-direction: column;
+        justify-content: space-between;
+        justify-items: center;
+        width: 100%; 
+        gap: 1rem;
+    }
+
+    .fotos__jardin {
+        width: 80%;
+    }
+
+    .fotos__primaria {
+        width: 80%;
+    }
+
+    .fotos__secundario {
+        width: 80%;
+    }
+
+    .imagenes1 {
+        margin: 0 auto;
+    }
+
+    .travel__grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 300px);
+        
+    }
+
+    .travel__imagen {
+        flex-direction: column;
+    }
+
+    .form {
+        width: 500px;
+        align-self: center;
+        text-align: start;
+       
+    }
+
+    .label {
+        font-size: small;
+        align-self:flex-start;
+        margin-left: 4rem;
+        
+    }
+
+    .input {
+        width: 80%;
+        align-self: center;
+    }
+
+    .input__mensaje {
+        width: 80%;
+        align-self: center;
+    }
+
+    .imagenes1 {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .historia2 {
+        width: 70%;
+        height: auto;
+
+    }
+
+    .img1 {
+        width:85%
+    }
+
+    .img2 {
+        width:85%
+    }
+   
 }
+
     
 
 
