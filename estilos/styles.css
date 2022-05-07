@@ -994,16 +994,9 @@ main {
     }
 
     .footer {
-        flex-direction: column-reverse;
-        
-     
+        flex-direction: column-reverse;   
     }
-
-    .footer__direccion {
-        line-height: 8px;
-    }
-
-    
+  
     .column {
         flex-wrap: wrap;
         gap: 1rem;
