@@ -150,6 +150,11 @@ main {
 
 /* INDEX - MAIN */ 
 
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
 .section1 {
     background-color:   #d7e6ef;
     width: 100%;
