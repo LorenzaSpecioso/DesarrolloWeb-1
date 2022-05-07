@@ -113,22 +113,15 @@ main {
     justify-content:space-around;
     align-items: center;
     padding: 1rem;
-  
-
+    min-height: 100px
 
 }
 
-.footer__cajalogo {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-  
-   
-}
 
 .footer__logo {
     padding: 1rem;
-   width: 10rem;
+   width: 15rem;
+
    
 }
 
@@ -205,15 +198,6 @@ main {
 
 /* NOSOTROS - MAIN */ 
 
-.column {
-    display:flex;
-    color: black;
- 
-   
-
-
-}
-
 .main__sistemaeducativo {
     text-align: center;
     font-size: 150%;
@@ -223,6 +207,44 @@ main {
     margin-bottom: 1rem;
 
 }
+.niveles {
+    background-color: #eaeaea;
+    color: #777;
+    min-height: 100vh;
+    padding: 100px 0;
+    text-align: center;
+    object-fit: cover;
+}
+
+.título__nosotros {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2991d6;
+    margin-bottom: 1rem;
+}
+
+.texto__nosotros {
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 2rem;
+}
+
+.imagennivel {
+    margin: 1rem;
+}
+
+
+
+
+/*
+
+.column {
+    display:flex;
+    color: black;
+
+}
+
+
 
 
 
@@ -285,6 +307,8 @@ main {
     line-height: 25px;
     color: #777;
 }
+*/
+
 
 .contenedordefotos {
     width: 100%;
@@ -412,6 +436,11 @@ main {
 }
 
 /* VIAJES - MAIN */ 
+
+.imgviaje {
+    padding: 10px;
+  
+}
 
 .viajes {
     text-align: center;
@@ -576,6 +605,7 @@ main {
 .form {
     display: flex;
     flex-direction: column;
+    width: 100vh;
 }
 
 .label {
@@ -677,16 +707,16 @@ main {
     }
 
     .footer__texto {
-        font-size: xx-small;
-        line-height: 12px;
+        font-size: small;
+        line-height: 20px;
     }
 
     .footer__contacto {
-        font-size: xx-small;
+        font-size: small;
     }
 
     .footer__logo {
-        width: 150px;
+        width: 200px;
     }
 
 
@@ -833,7 +863,7 @@ main {
     }
 
     .travel__imagen {
-        width: 30%
+        width: 30%;
         gap: 3rem;
         height: auto;
     }
@@ -965,37 +995,14 @@ main {
 
     .footer {
         flex-direction: column-reverse;
-        position: relative;
-        height: 10rem;
-    }
-
-    .footer__logo {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        margin-bottom: 4rem;
-    }
-
-    .footer__texto { 
-        width: 80%;
-        position: absolute;
-        align-items: center;
-        padding: 8px;
-        margin: 0;
-        bottom: 0;
-    }
-
-    .footer__contacto {
-        width: 80%;
-        align-items: flex-end;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        margin-bottom: 5rem;
         
-       
-       
+     
     }
+
+    .footer__direccion {
+        line-height: 8px;
+    }
+
     
     .column {
         flex-wrap: wrap;
@@ -1143,6 +1150,8 @@ main {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         
     }
+
+    
 
     
 }
